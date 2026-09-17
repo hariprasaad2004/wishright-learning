@@ -74,3 +74,17 @@ rem = the root elements font photo_size_select_actual
 
 instead of using px we can use rem 
 1.5rem means the 16px
+
+
+@media	           Changes styles based on screen size
+clamp()	          Creates fluid values with limits
+transition	       Makes property changes smooth
+translate()	          Moves an element
+rotate()	         Rotates an element
+scale()	           Resizes an element visually
+skew()          	Slants an element
+@keyframes        	Defines animation stages
+animation	            Applies an animation
+overflow: hidden       	Hides overflowing content
+perspective	            Creates 3D depth
+backface-visibility       	Hides the reverse face
