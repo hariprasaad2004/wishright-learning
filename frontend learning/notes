@@ -1,0 +1,76 @@
+Z-index
+========
+z-index controls the stacking order of overlapping elements.
+
+An element with a higher z-index appears in front.
+An element with a lower z-index appears behind.
+For example, an element with z-index: 10 appears above one with z-index: 5.
+It works mainly with positioned elements using relative, absolute, fixed, or sticky.
+If two elements have the same z-index, the element written later in the HTML usually appears on top.
+
+In simple terms, z-index decides which overlapping element is closer to the viewer.
+
+
+=========
+
+handle overflow content 
+
+Positioning properties
+======================
+The CSS position property controls where an element appears. Its values are static, relative, absolute, fixed, and sticky. It works with top, right, bottom, and left. The z-index property controls which overlapping element appears on top.
+
+Static: Default position. Follows normal page flow; top, right, bottom, left, and z-index do not apply.
+
+Relative: Moves from its original position while preserving its original space. It can act as a reference for absolute children.
+
+Absolute: Removed from normal flow and positioned relative to the nearest positioned parent.
+
+Fixed: Positioned relative to the browser viewport and remains in place while scrolling.
+
+Sticky: Behaves like relative positioning until a scroll point is reached, then sticks within its parent container.
+
+Common pattern: Set the parent to position: relative and the child to position: absolute.
+
+z-index: Controls which overlapping positioned element appears on top.
+
+flex box
+=========
+
+CSS Flexbox is a one-dimensional layout system used to arrange elements in a row or column. Apply display: flex to the parent, making its direct children flex items. flex-direction controls the main axis, justify-content aligns items along the main axis, and align-items aligns them along the cross axis. Use flex-wrap for responsive wrapping and gap for spacing. Flex-item properties such as flex-grow, flex-shrink, flex-basis, align-self, and order control individual items. Flexbox is commonly used for navigation bars, centered content, card layouts, equal columns, and sidebar layouts.
+
+
+css responsive design common break points 
+==========================================
+
+/* Mobile */
+@media (max-width: 576px) { }
+
+/* Tablet */
+@media (max-width: 768px) { }
+
+/* Laptop */
+@media (max-width: 992px) { }
+
+/* Desktop */
+@media (max-width: 1200px) { }
+
+
+
+Media Query Syntax
+====================
+@media (min-width: 768px) { }
+
+@media (max-width: 767px) { }
+
+@media screen and (min-width: 768px) { }
+
+Multiple conditions with 'and'
+
+Styles inside apply when condition is true
+
+
+
+rem = the root elements font photo_size_select_actual
+
+instead of using px we can use rem 
+1.5rem means the 16px
